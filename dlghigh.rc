@@ -1,0 +1,35 @@
+/*컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+  DIALOG.RC resource script file
+  컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴*/
+
+#include <os2.h>
+#include "dlghigh.h"
+
+MENU ID_DIALOG
+{
+   SUBMENU "~File",                        IDM_FILE
+   {
+       MENUITEM "~Dialog...\tF5",          IDM_OPENDLG
+       MENUITEM SEPARATOR
+       MENUITEM "E~xit...\tF3",    IDM_EXIT
+   }
+}
+
+DLGTEMPLATE IDD_DIALOG LOADONCALL MOVEABLE DISCARDABLE 
+BEGIN
+    DIALOG "", IDD_DIALOG, 5, 7, 416, 130, FS_NOBYTEALIGN | FS_DLGBORDER | 
+                WS_VISIBLE | WS_CLIPSIBLINGS | WS_SAVEBITS
+    BEGIN
+        CONTROL "", IDD_LIST, 1, 1, 412, 110, WC_LISTBOX, LS_OWNERDRAW | 
+                WS_TABSTOP | WS_VISIBLE
+        CONTROL "News Headlines", IDD_NEWS, 1, 115, 410, 14, WC_STATIC,
+                SS_TEXT | DT_CENTER | DT_VCENTER | WS_GROUP | WS_VISIBLE
+    END
+END
+
+ACCELTABLE ID_DIALOG
+{
+   VK_F3,  IDM_EXIT,       VIRTUALKEY
+   VK_F5,  IDM_OPENDLG,    VIRTUALKEY
+}
+

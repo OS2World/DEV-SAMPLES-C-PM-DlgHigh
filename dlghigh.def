@@ -1,0 +1,15 @@
+;컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+; Dialog.def module definition file
+;컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+
+NAME           DLGHIGH     WINDOWAPI
+
+DESCRIPTION    'Dialog OWNERDRAW List Box (C) Bunker Hill Software, 1990'
+PROTMODE
+HEAPSIZE       1024
+STACKSIZE      8192
+EXPORTS        ClientWndProc
+               SelectDlgProc
+
+
+

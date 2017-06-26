@@ -1,0 +1,35 @@
+                                Dlghigh.c
+                                
+The object of this program is to demonstrate how to use the LS_OWNERDRAW 
+listbox feature and to utilize that feature to highlite a keyword in any 
+listbox item which is needed.
+
+I have found there are a lot of functions that do not have good 
+documentation in both the IBM and Microsoft toolkits that it sometimes 
+becomes frustrating trying to figure out how to use them.
+
+When I looked in my Microsoft OS/2 Programmer's Reference Manual trying 
+to figure out how to accomplish an OWNERDRAW listbox, it was about as 
+clear as mud (refer to page 186 - 187, Volume 1).
+
+After receiving some help from Guy Scharf (CIS ID: 76702,557) I was able 
+to complete this function. After getting his information, the 
+information in the manual actually did make a lot more sense.
+
+If you are in need of creating your own style listboxes this will at 
+least put you in the right direction.
+
+If you want to contact me, feel free to call my BBS or send me mail on 
+CIS (I usually check my BBS a *lot* more frequently than I do CIS).
+
+Alan DuBoff
+Bunker Hill Software
+P.O. Box 18138
+Encino, California 91416-8138
+
+You Bet Your Ascii BBS: (818) 989-0310
+                CIS ID: 76662,660
+            
+
+       *****   Special thanks to Guy Scharf for his help. *****
+

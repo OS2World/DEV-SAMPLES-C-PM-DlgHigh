@@ -1,0 +1,16 @@
+#컴컴컴컴컴컴컴컴�
+# Dialog make file
+#컴컴컴컴컴컴컴컴�
+
+All : dlghigh.exe
+
+dlghigh.obj : dlghigh.c dlghigh.h
+     cl -c -AL -G2sw -Od -W4 -Zep dlghigh.c
+
+dlghigh.res : dlghigh.rc dlghigh.h
+     rc -r dlghigh
+
+dlghigh.exe : dlghigh.obj dlghigh.res
+     link /NOD dlghigh, /align:16, NUL, os2 llibcep, dlghigh
+     rc dlghigh.res
+
